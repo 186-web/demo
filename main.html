@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <title>Mobile Cffe Cart</title>
+    <style>
+    @font-face {
+  			font-family: 'open600'; 
+  			src: url('assets-1/OpenSans600.ttf');
+  			}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('coffee img.png'); /* Background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: lightgrey; 
+            opacity: .5;
+            font-family: open600;
+            color: black;
+            
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            flex-wrap: wrap; /* Allow wrapping for responsiveness */
+        }
+
+        .content {
+            flex: 3; /* Main content takes up 3 parts */
+            padding: 20px;
+            background-color: rgba(244, 244, 244, 0.0); /* Semi-transparent background */
+            border-radius: 10px;
+            margin-right: 20px;
+            min-width: 300px; /* Minimum width for
+            responsiveness */
+            font-size: 2em;
+            color: white;
+        }
+
+        aside {
+            flex: 1; /* Aside takes up 1 part */
+            padding: 20px;
+            background-color: rgba(226, 226, 226, 0.6); /* Semi-transparent background */
+            border-radius: 10px;
+            min-width: 200px; /* Minimum width for responsiveness */
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent dark */
+            color: white;
+            text-align: right;
+            padding: 10px;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: steelblue; /* Green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: lightgrey; /* Darker green on hover */
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Stack elements on smaller screens */
+                height: auto;
+            }
+
+            .content, aside {
+                margin-right: 0; /* Remove right margin on smaller screens */
+                margin-bottom: 20px; /* Add bottom margin for spacing */
+            }
+    .content {
+            
+            background-color: rgba(244, 244, 244, 0.6); 
+            font-size: 1em;
+            color: black;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Daily Grind</h1>
+        <p>Your daily dose of caffine, where ever you are</p>
+    </header>
+    
+    <main>
+        <div class="content">
+            We bring the best coffee in Melbourne to you!  Our mobile coffee cart caters to events, businesses, and festivals.  Contact us to book us for your next event!
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+        
+        <aside>
+            <h2>what's news</h2>
+            <p>Melbourne's newest mobile coffee experience is brewing up a storm!  The Daily Grind is bringing fresh, ethically sourced coffee right to your doorstep (or park, or event!). We're committed to quality, convenience, and community, making your caffeine fix easier and more delicious than ever.</p>
+            <ul>
+                <li>Award-Winning Beans: We source our beans from renowned Victorian roasters, "Bean There, Brewed That," known for their sustainable practices and exceptional flavour profiles.  Their signature blend, "Sunrise Serenade," is a crowd favourite!</li>
+                <li>5 Community Focused:  More than just coffee, The Daily Grind is about connecting with our community. We're partnering with local artists to showcase their work on our cart and sponsoring neighbourhood events.  Look for us at your next local festival!</li>
+                <li>Sustainable Practices: We're committed to reducing our environmental impact.  From using compostable cups to supporting sustainable farming practices, we're brewing a better future, one cup at a time.</li>
+            </ul>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>contact us email@adress.com <br>
+          &copy; 2025 The Daily Grind. All rights reserved.</p>
+    </footer>
+</body>
+</html>
